@@ -1,11 +1,11 @@
-from playwright.sync_api import sync_playwright
-
-
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False)
-    page = browser.new_page()
-    page.goto('https://www.facebook.com/')
-    page.goto('https://demo.automationtesting.in/Register.html') #another website for pratices
+# from playwright.sync_api import sync_playwright
+#
+#
+# with sync_playwright() as p:
+#     browser = p.chromium.launch(headless=False)
+#     page = browser.new_page()
+#     page.goto('https://www.facebook.com/')
+#     page.goto('https://demo.automationtesting.in/Register.html') #another website for pratices
 
 
 #...................XPATH............................
@@ -26,10 +26,10 @@ with sync_playwright() as p:
 #
 # Text method
 # ... //tagname[text()='text_value']
-
-    forgot_password = page.wait_for_selector("//font[text()='Forgot password?']").click()
-    page.wait_for_timeout(3000)
-    browser.close()
+#
+#     forgot_password = page.wait_for_selector("//font[text()='Forgot password?']").click()
+#     page.wait_for_timeout(3000)
+#     browser.close()
 
 #..contain()
 

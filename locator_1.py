@@ -22,7 +22,7 @@ with sync_playwright() as play:
 
 
 # css selector - id - # , class - . , attribute - tagname[attribute ='value']
-#----------------------------------------------------------------------
+####----------------------------------------------------------------------
 # #id using
     #
     # email_textbox=page.wait_for_selector('#email').type('sethi@123')

@@ -42,10 +42,17 @@ with sync_playwright() as p:
 #     check_box_click_2.click()
 
 #####..Drop-down click
-    dd_click = page.locator("#dropdown-class-example")
-    # dd_click.click()
-    dd_click.select_option("Option1")
+    # drpd_click = page.locator("#dropdown-class-example")
+    # # drpd_click.click()
+    # drpd_click.select_option("Option1")
 
+####..Radio bottom click..##
+    # page.locator('input[class="radioButton"]').nth(1).click()
+    # page.locator('input[class="radioButton"]').nth(2).click()
+###..xpath..
+    # page.locator("(//input[@class='radioButton'])[2]").click()
+
+###
 
 
     time.sleep(5)

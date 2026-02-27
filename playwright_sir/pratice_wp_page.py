@@ -4,4 +4,8 @@ import time
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     page = browser.new_page()
-    page.goto("wp link")
+    page.goto("https://rahulshettyacademy.com/AutomationPractice/")
+
+
+    time.sleep(5)
+    browser.close()
